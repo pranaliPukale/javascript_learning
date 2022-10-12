@@ -13,6 +13,7 @@ console.log(f.replace("virat","anushka"));
 console.log(l.toUpperCase());
 var greet ="     Good Morning";
 console.log(greet);
+
 console.log(greet.trim());
 console.log(greet.includes("Good"));
 console.log(greet.substring(9,12));

@@ -7,6 +7,7 @@ var s=str.trim();
 console.log("Removing extra spaces:",s);
 var e=(str.length)-(s.length);
 console.log("Total extra spaces:",e);
+
 var w=s.split(" ");
 console.log("Total word:",w);
 console.log(`Index of 'good':`,s.indexOf('good'));
