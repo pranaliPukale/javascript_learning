@@ -1,7 +1,7 @@
 console.log("======Assignment 1========");
 console.log("======Question 1========");
 var reverseString=function(){
-let s1="I am good IT Developer";
+let s1="I am very good IT Developer";
 console.log(s1);
 let vowel="aeiou";
 let s2=s1.toLocaleLowerCase();
