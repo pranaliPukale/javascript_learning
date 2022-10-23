@@ -14,6 +14,7 @@ console.log(`Original Array:${array_nums}`);
 console.log(`After add new element:${num2}`);
 console.log("===Merge array===");
 var array_nums=[20,3,4,56,90,400,49];
+var array_even=[2,30,8,14];
 var Merge=[...array_nums,...array_even];
 console.log(`Merge array:${Merge}`);
 console.log("=========employee info============");
