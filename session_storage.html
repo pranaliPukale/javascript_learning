@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Session Storage</title>
+    </head>
+    <body>
+        <h1>Example of Session Storage:</h1>
+        <script>
+            window.sessionStorage.setItem("First Name:","Pranali");
+            window.sessionStorage.setItem("Middle Name:",'Nandkishor');
+            window.sessionStorage.setItem("Last Name:","Pukale");
+            window.sessionStorage.setItem("City:",'Pandharpur');
+            console.log("First Name:",window.sessionStorage.getItem("First Name:"));
+            console.log("Last Name",window.sessionStorage.getItem("Last Name:"));
+            console.log("session storage length:",window.sessionStorage.length);
+          console.log('after clear()',window.sessionStorage.clear());
+        </script>
+    </body>
+</html>
