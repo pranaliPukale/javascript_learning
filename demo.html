@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM use</title>
+    </head>
+    <body>
+        <h1>Use of DOM</h1>
+        <p id="p1">What is your name?</p>
+        <p>double click event<span id="p2">happen</span></p>
+        <button id="btn">Hi</button>
+        <script>
+            //document.querySelector("hello").style.color='red';
+            console.log(document.getElementById("btn"));
+            const e=document.getElementById("btn");
+            e.addEventListener("click",myfun);
+            e.addEventListener("dblclick",my)
+            e.style.color="orange";
+            function myfun()
+            {
+                var a=document.getElementById("p1");
+                a.innerHTML="Pranali Pukale";
+                a.style.backgroundColor="gray";
+            }
+            function my()
+            {
+               var b=document.getElementById("p2");
+               b.style.backgroundColor="green";
+            }
+
+        </script>
+    </body>
+</html>
