@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>real dom</title>
+   </head>
+   <body>
+     <div id="root"></div>
+     <script type="text/javascript">
+         function hi(){
+            document.getElementById("root").innerHTML=
+            "<div><h1>Hello</h1><h2>"+new Date().toLocaleTimeString()+"</h2></div>";
+         }
+         setInterval(hi,2000);
+     </script>
+   </body>
+</html>
