@@ -5,28 +5,34 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Don't use this in production: -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
     </head>
     <body>
+
         <div id="root"></div>
-        <h1>about me:</h1>
-        <ul>
-            <li>Name:</li>
-            <li>Qualificatio:</li>
-            <li>Native place:</li>
-        </ul>
-        <button id="btn1">click</button>
-        <script>
-             const element=document.getElementById("btn1");
-             element.addEventListener("click",myfun);
-             element.style.color="red";
-             function myfun()
-             {
-                 var val=document.getElementsByTagName("li");
-                 val[0].innerHTML="Pranali";
-                 val[1].innerHTML="MSC(Comp)";
-                 val[2].innerHTML="Pandharpur";
-                 ReactDOM.render(val,document.getElementById("root"));
-             }
+        <style>
+            #h1{
+                color: rgb(233, 80, 80);
+                background-color: rgb(133, 240, 240);
+            }
+            .l{
+                color: rgb(182, 121, 240);
+                background-color: rgb(236, 222, 205);
+            }
+        </style>
+       
+        <script type="text/babel">
+             const value=(
+             <div>
+                <h1 id="h1">Information:</h1>  
+             <ul>
+                    <li class='l'> Name:Pranali Pukale</li>
+                    <li class="l"> Graduation:MSC(Comp)</li>
+                    <li class='l'> Native Place-Pandharpur</li>
+                </ul>
+             </div>   
+             );
+             ReactDOM.render(value,document.getElementById("root"));
         </script>
     </body>
 </html>
